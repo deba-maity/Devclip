@@ -1,0 +1,82 @@
+{
+  "name": "Devclip",
+  "displayName": "Developer's Clipboard",
+  "description": "A clipboard for developers where multiple copy-paste is available",
+  "version": "0.0.1",
+  "publisher": "your-publisher-id",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "extension.showClipboardHistory", "title": "Show Clipboard History" },
+      { "command": "extension.copy1", "title": "Copy to Slot 1" },
+      { "command": "extension.paste1", "title": "Paste from Slot 1" },
+      { "command": "extension.copy2", "title": "Copy to Slot 2" },
+      { "command": "extension.paste2", "title": "Paste from Slot 2" },
+      { "command": "extension.copy3", "title": "Copy to Slot 3" },
+      { "command": "extension.paste3", "title": "Paste from Slot 3" },
+      { "command": "extension.copy4", "title": "Copy to Slot 4" },
+      { "command": "extension.paste4", "title": "Paste from Slot 4" },
+      { "command": "extension.copy5", "title": "Copy to Slot 5" },
+      { "command": "extension.paste5", "title": "Paste from Slot 5" },
+      { "command": "extension.copy6", "title": "Copy to Slot 6" },
+      { "command": "extension.paste6", "title": "Paste from Slot 6" },
+      { "command": "extension.copy7", "title": "Copy to Slot 7" },
+      { "command": "extension.paste7", "title": "Paste from Slot 7" },
+      { "command": "extension.copy8", "title": "Copy to Slot 8" },
+      { "command": "extension.paste8", "title": "Paste from Slot 8" },
+      { "command": "extension.copy9", "title": "Copy to Slot 9" },
+      { "command": "extension.paste9", "title": "Paste from Slot 9" },
+      { "command": "extension.copy10", "title": "Copy to Slot 10" },
+      { "command": "extension.paste10", "title": "Paste from Slot 10" }
+    ],
+    "keybindings": [
+      { "command": "extension.copy1", "key": "ctrl+shift+1" },
+      { "command": "extension.paste1", "key": "ctrl+alt+1" },
+      { "command": "extension.copy2", "key": "ctrl+shift+2" },
+      { "command": "extension.paste2", "key": "ctrl+alt+2" },
+      { "command": "extension.copy3", "key": "ctrl+shift+3" },
+      { "command": "extension.paste3", "key": "ctrl+alt+3" },
+      { "command": "extension.copy4", "key": "ctrl+shift+4" },
+      { "command": "extension.paste4", "key": "ctrl+alt+4" },
+      { "command": "extension.copy5", "key": "ctrl+shift+5" },
+      { "command": "extension.paste5", "key": "ctrl+alt+5" },
+      { "command": "extension.copy6", "key": "ctrl+shift+6" },
+      { "command": "extension.paste6", "key": "ctrl+alt+6" },
+      { "command": "extension.copy7", "key": "ctrl+shift+7" },
+      { "command": "extension.paste7", "key": "ctrl+alt+7" },
+      { "command": "extension.copy8", "key": "ctrl+shift+8" },
+      { "command": "extension.paste8", "key": "ctrl+alt+8" },
+      { "command": "extension.copy9", "key": "ctrl+shift+9" },
+      { "command": "extension.paste9", "key": "ctrl+alt+9" },
+      { "command": "extension.copy10", "key": "ctrl+shift+0" },
+      { "command": "extension.paste10", "key": "ctrl+alt+0" },
+      { "command": "extension.showClipboardHistory", "key": "ctrl+shift+h" }
+    ]
+
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.98.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^9.23.0",
+    "typescript": "^5.8.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
